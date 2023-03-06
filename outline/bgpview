@@ -1,0 +1,48 @@
+# BGPView API Synopsis
+* WBGPView is an API (Application Programming Interface) tool that provides information related to the Border Gateway Protocol (BGP), including information about Autonomous Systems (AS) and Internet Protocol (IP) addresses.
+
+* The tool was developed by the network security company RiskIQ.
+
+* BGPView is open-source, and its latest version was last updated on March 3, 2023, according to its GitHub repository. It appears to be updated frequently, with multiple updates made within the past year.
+
+* For more detailed documentation, you can visit the BGPView API website at https://bgpview.docs.apiary.io/ or the BGPView GitHub repository at https://github.com/bgpat/bgview.
+
+## Setup
+How do you use the tool? 
+* BGPView is an API tool, so it can be accessed using HTTP requests through a programming language or command-line interface. It does not require any installation and can be accessed through the BGPView API website or programmatically using its API endpoints.
+
+* There is no license required to use BGPView, as it is open-source and free to use. However, there are rate limits in place for API usage to prevent abuse.
+
+* There is no specific academic license available for BGPView, as it is open-source and free to use for anyone. However, academic institutions can use BGPView for research and academic purposes within the constraints of its rate limits.
+
+## Input
+* To use BGPView, you need to provide input related to the BGP network you are interested in. This can include an AS number, IP address, prefix, or organization name. 
+
+* The input can be provided in various forms, including as a command-line argument, as a parameter in an HTTP request, or as part of a programmatic API request.
+
+* BGPView allows you to search for information related to a specific organization by providing the organization's name or domain name as input. This can be useful for identifying the network infrastructure and IP addresses associated with a particular organization.
+
+* BGPView offers several interesting command-line switches and search criteria, including the ability to search for information related to a specific prefix or IP address range, search for information related to a specific ASN, or search for information related to a specific BGP update.
+
+* BGPView provides an API that can be accessed programmatically, allowing you to retrieve BGP-related information using HTTP requests. The API endpoints support various parameters and filters, allowing you to customize your search and retrieve specific information related to the BGP network.
+
+## Output Summary
+* The output provided by BGPView is in the form of structured data that can be used by other applications or tools. The data includes information related to Autonomous Systems (AS), IP addresses, prefixes, and BGP updates.
+
+* The output can be provided in various formats, including JSON, XML, and CSV. The default format is JSON, which can be easily parsed by programming languages and used in applications. The output from BGPView includes various details about the BGP network, such as the AS number, AS name, IP addresses associated with the AS, BGP routes, prefixes, and BGP update information. The output can be customized using various parameters and filters to retrieve specific information related to the BGP network.
+
+## Output Mapping to STIX 2.1
+* BGPView provides information related to BGP networks, which can be mapped to various fields in the STIX 2.1 schema. Here are some examples of how the output from BGPView can be mapped to STIX 2.1 fields:
+
+     * Autonomous System (AS) number and name: This information can be mapped to the autonomous-system.number and autonomous-system.name properties in STIX 2.1.
+
+    * IP address and prefix: This information can be mapped to the ipv4-addr.value, ipv4-addr.resolves_to_refs, and ipv4-addr.blocks_ref properties in STIX 2.1.
+
+    * BGP route: This information can be mapped to the route.origin, route.origin_as, route.next_hop, route.path, and route.path_ref properties in STIX 2.1.
+
+    * BGP update information: This information can be mapped to the network_traffic.src_ref, network_traffic.dst_ref, network_traffic.src_port, network_traffic.dst_port, and network_traffic.protocols properties in STIX 2.1.
+
+* Overall, the output from BGPView can be mapped to various fields in the STIX 2.1 schema, allowing the information to be used in threat intelligence and other security-related applications.
+
+## Example
+Provide an example use of the tool through text or screenshots. If it's possible to provide an organization as input, use UA Little Rock as the organization. 
