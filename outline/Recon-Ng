@@ -5,7 +5,7 @@
 
 * Recon-ng is an active open-source project, and its codebase is available on GitHub. The last version of Recon-ng was released on January 6, 2022, and the project is regularly updated with bug fixes, new features, and support for additional data sources and modules.
 
-* For more detailed documentation, users can visit the Recon-ng GitHub page, which includes installation instructions, usage examples, and information on the tool's architecture and module system. Additionally, the Recon-ng community maintains a wiki with documentation, tutorials, and frequently asked questions.
+* For more detailed documentation, users can visit the Recon-ng GitHub page at https://github.com/lanmaster53/recon-ng, which includes installation instructions, usage examples, and information on the tool's architecture and module system. Additionally, the Recon-ng community maintains a wiki with documentation, tutorials, and frequently asked questions.
 
 ## Setup
 * To use Recon-ng, you need to download and install it on your local system. Recon-ng can be installed on Linux and Mac operating systems, and the installation process involves downloading the source code from the Recon-ng GitHub repository and running a few command-line commands.
