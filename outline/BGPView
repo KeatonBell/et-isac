@@ -45,4 +45,5 @@ How do you use the tool?
 * Overall, the output from BGPView can be mapped to various fields in the STIX 2.1 schema, allowing the information to be used in threat intelligence and other security-related applications.
 
 ## Example
-Provide an example use of the tool through text or screenshots. If it's possible to provide an organization as input, use UA Little Rock as the organization. 
+![Example](BGPView_1.jpg)
+![Example](BGPView_2.jpg)
