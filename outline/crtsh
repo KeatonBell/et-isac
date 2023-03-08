@@ -55,8 +55,8 @@
     * public_key: The public key of the SSL/TLS certificate can be mapped to the "public_key" field in STIX 2.1.
 
     * extensions: Any extensions included in the SSL/TLS certificate can be mapped to the "extensions" field in STIX 2.1.
-    
+
 * Overall, the output from crt.sh can be used to populate various fields in a STIX 2.1 object representing an SSL/TLS certificate, providing valuable context for cyber threat intelligence analysis and incident response.
 
 ## Example
-Provide an example use of the tool through text or screenshots. If it's possible to provide an organization as input, use UA Little Rock as the organization. 
+![Example](crtsh.jpg)
