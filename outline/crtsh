@@ -1,0 +1,62 @@
+# crt.sh Synopsis
+* crt.sh is a web-based tool that provides information about SSL/TLS certificates issued for a particular domain. It allows users to search and view the historical SSL/TLS certificates issued for a specific domain, including subdomains. The tool provides information such as the certificate's issuer, validity period, and cryptographic algorithms used.
+
+* The tool was developed by Sectigo, a company that provides digital security solutions. 
+
+* Crt.sh is an open-source tool, and its source code is available on GitHub. The last version of the tool was developed on October 26, 2021, at the time of writing this.
+
+* Users can refer to the crt.sh website for more detailed documentation on the tool, including frequently asked questions, how to use the tool, and its technical aspects https://crt.sh/?help. Additionally, users can refer to the tool's GitHub repository for further information about the tool's development and how to contribute to its development https://github.com/CaliDog/crt.sh. Additionally, the website also provides a blog section that features articles and updates on the tool's development and the SSL/TLS industry in general. You can access it at https://blog.crt.sh/.
+
+## Setup
+* In the search bar, enter the domain name for which you want to view SSL/TLS certificates, including subdomains.Click on the "Search" button.The tool will display a list of all SSL/TLS certificates issued for the domain, including subdomains. The list will show information such as the certificate's issuer, validity period, and cryptographic algorithms used.Users can click on any of the listed certificates to view more detailed information about the certificate.Users can also export the certificate information in various formats such as CSV or JSON by clicking on the "Download" button. 
+
+* crt.sh is a web-based tool, and it does not require any installation. Users can simply visit the crt.sh website and start using the tool. 
+
+* The tool is free to use, and there is no license required to use it. Users can access the crt.sh website without any restrictions? 
+
+* There is no academic license available for crt.sh. However, as the tool is free to use, academic users can use the tool without any restrictions.
+
+## Input
+* To use the crt.sh tool, you need to provide the domain name for which you want to view SSL/TLS certificate information. The domain name can be entered in the search bar on the crt.sh website.
+
+* The domain name can be entered in various forms, such as with or without the "www" prefix. Users can also search for specific subdomains by entering the subdomain name followed by a dot and the domain name.
+
+* crt.sh does not provide any specific input related to an organization. However, users can search for SSL/TLS certificates issued for a particular domain, including subdomains, regardless of the organization that owns or manages the domain.
+* Some interesting command line switches or search criteria for crt.sh include:
+
+    * -d: This switch allows users to specify the domain name they want to search for, bypassing the need to visit the crt.sh website. For example, crt.sh -d google.com will display a list of all SSL/TLS certificates issued for the domain "google.com".
+
+    * -q: This switch allows users to search for specific subdomains. For example, crt.sh -q subdomain.example.com will display a list of SSL/TLS certificates issued for the subdomain "subdomain.example.com".
+
+    * -o: This switch allows users to specify the output format for the certificate information. For example, crt.sh -o json google.com will export the SSL/TLS certificate information for "google.com" in JSON format.
+
+* There is an API available for crt.sh that users can programmatically access to retrieve SSL/TLS certificate information. The API can be accessed through the crt.sh website, and it requires users to sign up for an account and generate an API key. The API provides various endpoints to retrieve certificate information and supports various filters and output formats.
+
+## Output Summary
+* The output from crt.sh is a list of SSL/TLS certificates issued for a particular domain, including subdomains. The list shows information such as the certificate's issuer, validity period, and cryptographic algorithms used. Users can click on any of the listed certificates to view more detailed information about the certificate, including the certificate's subject name, SANs (Subject Alternative Names), and the certificate's public key.
+
+* The output is provided in a tabular format on the crt.sh website, with each row representing a single certificate and each column representing a different attribute of the certificate. Users can also export the certificate information in various formats such as CSV or JSON by clicking on the "Download" button
+
+## Output Mapping to STIX 2.1
+* The output from crt.sh can be mapped to various schema fields in STIX 2.1, depending on the specific attributes of the SSL/TLS certificates being analyzed. Here are some potential mappings:
+
+    * type: The type of the object being represented in STIX 2.1 would be "x509-certificate".
+
+    * spec_version: The version of the STIX specification being used would be "2.1".
+
+    * id: A unique identifier for the SSL/TLS certificate in STIX 2.1.
+
+    * issuer: The issuer of the SSL/TLS certificate can be mapped to the "issuer" field in STIX 2.1.
+
+    * validity_period: The validity period of the SSL/TLS certificate can be mapped to the "validity_not_before" and "validity_not_after" fields in STIX 2.1.
+
+    * subject: The subject name of the SSL/TLS certificate can be mapped to the "subject" field in STIX 2.1.
+
+    * public_key: The public key of the SSL/TLS certificate can be mapped to the "public_key" field in STIX 2.1.
+
+    * extensions: Any extensions included in the SSL/TLS certificate can be mapped to the "extensions" field in STIX 2.1.
+    
+* Overall, the output from crt.sh can be used to populate various fields in a STIX 2.1 object representing an SSL/TLS certificate, providing valuable context for cyber threat intelligence analysis and incident response.
+
+## Example
+Provide an example use of the tool through text or screenshots. If it's possible to provide an organization as input, use UA Little Rock as the organization. 
