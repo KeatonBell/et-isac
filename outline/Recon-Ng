@@ -48,4 +48,4 @@
 * To map Recon-ng output to STIX 2.1 schema fields, users need to convert the output into STIX 2.1 objects and properties using a tool or library that supports the STIX 2.1 format, such as the Python STIX2 library. By doing so, users can easily integrate their reconnaissance findings with other cyber threat intelligence sources and share the information in a standardized format.
 
 ## Example
-Provide an example use of the tool through text or screenshots. If it's possible to provide an organization as input, use UA Little Rock as the organization. 
+![Example](reconng.jpg)
